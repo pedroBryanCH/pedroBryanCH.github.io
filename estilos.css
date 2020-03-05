@@ -1,10 +1,40 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   width: 95%;
-  margin: auto;
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main, .sidebar, .footer {
+  padding: .5em;
 }
 .header {
   background-color: #ddd;
 }
-.title {
-  text-align: center;
+.banner {
+  display: block;
+  width: 100%;
+}
+.container {
+  flex-grow: 1;
+  display: flex;
+}
+.main {
+  background-color: lime;
+  width: 80%;
+}
+.sidebar {
+  background-color: steelblue;
+  width: 20%;
+}
+.footer {
+  background-color: #000;
+  color: #fff;
 }
