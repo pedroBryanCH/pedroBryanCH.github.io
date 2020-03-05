@@ -2,3 +2,9 @@ body {
   width: 95%;
   margin: auto;
 }
+.header {
+  background-color: #ddd;
+}
+.title {
+  text-align: center;
+}
