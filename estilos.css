@@ -94,13 +94,22 @@ body {
 }
 .main-title {
   color: rgb(59, 40, 148);
+  margin-bottom: .2em;
+}
+p {
+  margin-bottom: .5em;
 }
 .sidebar {
-  background-color: steelblue;
+  background-color: rgba(234, 243, 251, 0.877);
+  margin-bottom: 40px;
 }
 .footer {
-  background-color: #000;
+  height: 40px;
+  width: 100%;
+  background-color: rgb(59, 40, 148);
   color: #fff;
+  position: fixed;
+  bottom: 0;
 }
 /* media queries */
 @media screen and (min-width: 640px) {
