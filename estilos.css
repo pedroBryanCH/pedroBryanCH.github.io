@@ -13,10 +13,13 @@ body {
 .navbar {
   display: flex;
   height: 40px;
-  background-color: rgb(125, 125, 207);
+  background-color: rgb(59, 40, 148);
   align-items: center;
   line-height: 40px;
   padding: .5em;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
 }
 .menu-icon {
   font-size: 2.5em;
@@ -26,6 +29,7 @@ body {
   color: white;
   flex-grow: 1;
   text-align: center;
+  font-size: 1.6em;
 }
 .pet-icon {
   color: #fff;
@@ -34,12 +38,13 @@ body {
   padding: .5em;
 }
 .banner-container {
+  margin-top: 40px;
   position: relative;
 }
 .banner-container::before {
   display: block;
   content: "";
-  background-color: rgba(134, 168, 241, 0.85);
+  background-color: rgba(93, 152, 207, 0.15);
   height: 100%;
   width: 100%;
   top: 0;
@@ -50,6 +55,33 @@ body {
 .banner {
   display: block;
   width: 100%;
+}
+.menu {
+  height: calc(100vh - 40px);
+  background-color: rgb(59, 40, 148);
+  width: 180px;
+  position: fixed;
+  top: 40px;
+  z-index: 1000;
+  transition: all ease .7s;
+  border-top: solid 1px rgb(53, 18, 148);
+  left: -180px;
+}
+.menu-active {
+  left: 0;
+  transition: all ease .7s;
+}
+.menu-list {
+  list-style: none;
+}
+.menu-list__item {
+  display: block;
+  padding: 0 1em;
+  line-height: 2;
+}
+.menu-list__link {
+  color: #fff;  
+  text-decoration: none;
 }
 .container {
   flex-grow: 1;
