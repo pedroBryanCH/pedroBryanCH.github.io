@@ -10,6 +10,16 @@ body {
   display: flex;
   flex-direction: column;
 }
+.navbar {
+  display: flex;
+  height: 40px;
+  background-color: blue;
+  align-items: center;
+}
+.menu-icon {
+  font-size: 2.5em;
+  color: #fff;
+}
 .main, .sidebar, .footer {
   padding: .5em;
 }
