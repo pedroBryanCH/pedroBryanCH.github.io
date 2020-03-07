@@ -13,18 +13,39 @@ body {
 .navbar {
   display: flex;
   height: 40px;
-  background-color: blue;
+  background-color: rgb(125, 125, 207);
   align-items: center;
+  line-height: 40px;
+  padding: .5em;
 }
 .menu-icon {
   font-size: 2.5em;
   color: #fff;
 }
+.title {
+  color: white;
+  flex-grow: 1;
+  text-align: center;
+}
+.pet-icon {
+  color: #fff;
+}
 .main, .sidebar, .footer {
   padding: .5em;
 }
-.header {
-  background-color: #ddd;
+.banner-container {
+  position: relative;
+}
+.banner-container::before {
+  display: block;
+  content: "";
+  background-color: rgba(134, 168, 241, 0.85);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: 10;
 }
 .banner {
   display: block;
