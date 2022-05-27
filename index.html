@@ -3,68 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>website</title>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="estilos.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="./estilos.css">
+  <script src="./scripts.js" defer></script>
 </head>
 <body>
-  <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
-      <script>
-        window.fbAsyncInit = function() {
-          FB.init({
-            xfbml            : true,
-            version          : 'v10.0'
-          });
-        };
-
-        (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
-        fjs.parentNode.insertBefore(js, fjs);
-      }(document, 'script', 'facebook-jssdk'));</script>
-
-      <!-- Your Chat Plugin code -->
-      <div class="fb-customerchat"
-        attribution="setup_tool"
-        page_id="100499202193497">
+  <header class="main-header">
+    <nav class="main-menu">
+      <div class="main-menu__mobile" id="main-menu__mobile">
+        <div class="main-menu__icono-mobile" id="main-menu__icono-mobile"></div>
       </div>
-  <header class="header">
-    <div class="navbar">
-      <i id="menu-icon" class="material-icons menu-icon">menu</i>
-      <h1 class="title">Mis mascotas</h1>
-      <i class="material-icons pet-icon">pets</i>
-    </div>
-    <div class="banner-container">
-      <img src="https://cdn.pixabay.com/photo/2017/04/11/15/55/animals-2222007_960_720.jpg" alt="" class="banner">
-    </div>
-    <nav id ="menu" class="menu">
-      <ul class="menu-list">
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Perros</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Gatos</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Conejos</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Peces</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Canarios</a></li>
-        <li class="menu-list__item"><a href="#" class="menu-list__link">Hamsters</a></li>
+      <ul class="menu" id="menu">
+        <li class="menu__item"><a href="#" class="menu__link">item 1</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">item 2</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">item 3</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">item 4</a></li>
+        <li class="menu__item"><a href="#" class="menu__link">item 5</a></li>
       </ul>
     </nav>
   </header>
-  <section class="container">
-    <main class="main">
-      <h2 class="main-title">Las mascotas en el mundo</h2>
-      <p>Las mascotas estan con nosotros desde hace mucho tiempo, son los mejores acompañantes en nuestras vidas, debemos tener en cuenta que ellos dependen de nuestro cuidado y debemos darle todo nuestro amor y comprension, estos adorables animales son los amigos que siempre estaran con nosotros.</p>
-      <p>Debemos entonces conocer sobre ellos, como son sus comportamientos, que les gusta que les disgusta, que tipos de razas hay, que cuiddados requiere cada uno de ellos, etc.</p>
-    </main>
-    <aside class="sidebar">
-      <h2>Hola soy el sidebar</h2>
-    </aside>
-  </section>
-  <footer class="footer">
-    <h3>Hola soy el footer</h3>
-  </footer>
-
-  <script src="scripts.js"></script>
+  <div class="avatar">
+    <img src="./img/avatar.svg" alt="mi avatar" class="avatar__image">
+  </div>
 </body>
 </html>
